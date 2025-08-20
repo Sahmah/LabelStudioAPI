@@ -460,7 +460,7 @@ class DatasetFilter:
                     datasets_ids = [i for i in parts if i.isdigit()]
                     if datasets_ids:
                         dataset_id = datasets_ids[-1]
-                        name = folder.replace(f"_{dataset_id}", "").split("Dataset_VoxSmartCargo_-_")[-1]
+                        name = folder.replace(f"_{dataset_id}", "").split("Dataset_-_")[-1]
                         print(f"Incluindo {folder} no mapeamento. ID principal: {dataset_id} → nome: '{name}'")
                         id_to_name[dataset_id] = name
                     else:
